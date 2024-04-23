@@ -22,6 +22,12 @@
 \usepackage{graphicx} % Required for including images
 \usepackage{fancyhdr} % Required for customizing headers and footers
 \usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+}
 
 \definecolor{pkured}{RGB}{153,2,1}
 \newlength{\rulewidth}
@@ -66,7 +72,7 @@
 \begin{tabular}{l @{}}
 \hfill \today \bigskip\\ % Date
 \hfill Name \\ % Your name
-\hfill Email: xxx@pku.edu.cn \\ % Your email
+\hfill Email: \url{xxx@pku.edu.cn} \\ % Your email
 \hfill 5 Yiheyuan Road, Haidian District,\\
 \hfill Beijing, China, 100871 \\ % Address
 \end{tabular}

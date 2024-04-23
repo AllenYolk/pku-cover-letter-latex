@@ -2,6 +2,10 @@
 
 An elegant and easy-to-use cover letter template for Peking University students.
 
+## Compilation
+
+Please use `pdfLaTeX` to compile `cover-letter.tex`.
+
 ## References
 
 * [NJU cover_Letter Template](https://www.overleaf.com/latex/templates/nju-cover-letter-template-nan-da-tou-gao-xin-mo-ban/tkdpzmwxvksw)
