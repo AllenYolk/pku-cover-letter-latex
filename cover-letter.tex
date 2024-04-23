@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+\usepackage{fancyhdr} % Required for customizing headers and footers
+\usepackage{xcolor}
+
+\definecolor{pkured}{RGB}{153,2,1}
+\newlength{\rulewidth}
+\setlength{\rulewidth}{2pt}
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrule}{\textcolor{pkured}{\rule{\linewidth}{0pt}}} % Red footer rule
+	\renewcommand{\footrule}{\textcolor{pkured}{\rule{\linewidth}{\rulewidth}}} % Red footer rule
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrule}{\textcolor{pkured}{\rule{\linewidth}{\rulewidth}}} % Red footer rule
+	\renewcommand{\footrule}{\textcolor{pkured}{\rule{\linewidth}{\rulewidth}}} % Red footer rule
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.4\textwidth]{./img/pku.drawio.pdf} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\textcolor{pkured}{\rule{\linewidth}{\rulewidth}} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION; OPTIONAL!
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+\hfill \today \bigskip\\ % Date
+\hfill Name \\ % Your name
+\hfill Email: xxx@pku.edu.cn \\ % Your email
+\hfill 5 Yiheyuan Road, Haidian District,\\
+\hfill Beijing, China, 100871 \\ % Address
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{@{} l}
+	Professor\ Chandeller Bing \\
+	Editor-in-chief \\
+	\textit{Journal of Old Friends}
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+Dear Editor,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+On behalf of all authors, I am delighted to submit this manuscript entitled ``XXXXX XXXXX XXXXX XXXXX" to \textit{Journal of Old Friends} for consideration the possibility of its publication.
+
+I am writing to submit our manuscript entitled ``Hello World" for consideration for publication in the Journal of Old Friends.
+
+The manuscript is a unique piece of research that offers a fresh perspective and profound insights on a significant topic in our field. Our research work revolves around [insert a brief summary of your paper here].
+
+The work presented in the manuscript has not been published previously, nor is it under consideration for publication elsewhere. All the co-authors have read and agreed to the content of the paper. We believe that the findings presented in our work will serve as valuable information for the readers of the Journal of Old Friends.
+
+Attached herewith, please find the manuscript along with all relevant tables, figures, and supplementary data files. We would appreciate it if you could consider our manuscript for publication in your esteemed journal.
+
+Thank you for your time and consideration. We look forward to receiving your feedback.
+
+\bigskip % Vertical whitespace
+
+Yours sincerely,
+
+\vspace{20pt} % Vertical whitespace
+
+
+Name, Ph.D. candidate \\
+Peking University \\
+5 Yiheyuan Road, Beijing, China
+
+
+\end{document}
+
+% To PIZZA, a famous fat-ass cat who lived in Dorm 12.
